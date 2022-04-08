@@ -1,0 +1,17 @@
+.beer-details {
+  padding: 2rem;
+}
+.beer-details picture {
+  display: block;
+  text-align: center;
+}
+.beer-details picture img {
+  height: 10rem;
+}
+.beer-details .beer-details-description {
+  text-align: left;
+}
+.beer-details .tagline,
+.beer-details .contributed-by {
+  color: gray;
+}

@@ -6,6 +6,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import loading from './assets/loading-beers.gif'
 import Beers from './pages/Beers'
+import Beer from './pages/Beer'
 
 function App() {
   const [beers, setBeers] = useState([])
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route element={<Header />}>
             <Route path="/beers" element={<Beers beers={beers} />} />
+            <Route path="/beers/:beerId" element={<Beer beers={beers} />} />
             <Route path="/random-beer" element={<div>Random Beer</div>} />
             <Route path="/new-beer" element={<div>New Beer</div>} />
             <Route path="*" element={<div>404</div>} />
