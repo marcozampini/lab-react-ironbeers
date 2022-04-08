@@ -1,20 +1,7 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import './Beer.css'
 
-const Beer = (props) => {
-  let { beerId } = useParams()
-
-  const beer = props.beers.find((oneBeer) => oneBeer._id === beerId)
-  if (beer === undefined) {
-    return (
-      <>
-        <h1>404</h1>
-        <p>The beer code is not correct.</p>
-      </>
-    )
-  }
-  console.log(beer)
+const BeerCardDetails = (props) => {
+  const beer = props.beer
   return (
     <div className="beer-details">
       <picture>
@@ -32,4 +19,4 @@ const Beer = (props) => {
   )
 }
 
-export default Beer
+export default BeerCardDetails
