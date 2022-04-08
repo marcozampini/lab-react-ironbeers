@@ -1,0 +1,12 @@
+form {
+  margin: 2rem;
+}
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+label {
+  text-align: left;
+}

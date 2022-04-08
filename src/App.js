@@ -8,6 +8,7 @@ import loading from './assets/loading-beers.gif'
 import Beers from './pages/Beers'
 import SingleBeer from './pages/SingleBeer'
 import RandomBeer from './pages/RandomBeer'
+import NewBeer from './pages/NewBeer'
 
 function App() {
   const [beers, setBeers] = useState([])
@@ -43,7 +44,7 @@ function App() {
               element={<SingleBeer beers={beers} />}
             />
             <Route path="/random-beer" element={<RandomBeer />} />
-            <Route path="/new-beer" element={<div>New Beer</div>} />
+            <Route path="/new-beer" element={<NewBeer />} />
             <Route path="*" element={<div>404</div>} />
           </Route>
         </Routes>
