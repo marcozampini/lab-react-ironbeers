@@ -1,0 +1,7 @@
+.home-link {
+  display: block;
+  height: 53px;
+  background-color: #3cc4fc;
+  /*background-image: url('/header.png') no-repeat center center;*/
+  color: white;
+}
