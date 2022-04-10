@@ -3,7 +3,7 @@ import BeerCardDetails from '../components/BeerCardDetails'
 import './SingleBeer.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import loading from '../assets/loading-beers.gif'
+import Loading from './Loading'
 
 const RandomBeer = () => {
   const [beer, setBeer] = useState([])
@@ -20,9 +20,9 @@ const RandomBeer = () => {
 
   if (beer.length === 0) {
     return (
-      <div className="loading">
-        <img src={loading} alt="Loading..." />
-      </div>
+      <>
+        <Loading />
+        </>
     )
   }
 
